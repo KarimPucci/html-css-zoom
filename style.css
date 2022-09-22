@@ -6,7 +6,7 @@
 }
 
 body{
-  /* background-color: black; */
+  background-color: black;
 }
 
 header{
@@ -23,7 +23,39 @@ header button{
 }
 
 main{
-  width: calc(100% - 50px);
+  width: 100%;
+  height: calc(100vh - 60px);
   margin: 0 auto;
   background-color: darkorange;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  width: 60%;
+  padding-top: 5px;
+}
+
+footer nav{
+  display: flex;
+  justify-content: space-between;
+  /* width: 60px; */
+  height: 100%;
+  background-color: rgb(96, 96, 96);
+  color: white;
+  margin-top: 20px;
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+  padding: 10px;
 }
